@@ -5,7 +5,7 @@
 
     public abstract class KnapsackSolver
     {
-        public KnapsackSolver(IList<Item> items, int capacity)
+        protected KnapsackSolver(IList<Item> items, int capacity)
         {
             this.Items = items;
             this.Capacity = capacity;
@@ -17,12 +17,12 @@
 
         public abstract KnapsackSolution Solve();
 
-        public double getWeight(IList<Item> items)
+        public double GetWeight(IList<Item> items)
         {
             return items.Sum(i => i.Weight);
         }
 
-        public double getValue(IList<Item> items)
+        public double GetValue(IList<Item> items)
         {
             return items.Sum(i => i.Value);
         }

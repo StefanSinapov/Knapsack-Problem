@@ -3,7 +3,9 @@
     using System.Collections.Generic;
     using System.Text;
 
-    class KnapsackSolution
+    using Knapsack.Contracts;
+
+    public class KnapsackSolution : IKnapsackSolution
     {
         public string Approach { get; set; }
 

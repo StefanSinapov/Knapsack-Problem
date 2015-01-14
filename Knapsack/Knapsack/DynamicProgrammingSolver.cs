@@ -1,9 +1,13 @@
 ﻿namespace Knapsack
 {
     using System;
+    using System.Collections.Generic;
 
-    class DynamicProgrammingSolver : KnapsackSolver
+    public class DynamicProgrammingSolver : KnapsackSolver
     {
+        public DynamicProgrammingSolver(IList<Item> items, int capacity) : base(items, capacity)
+        {
+        }
 
         public override KnapsackSolution Solve()
         {
