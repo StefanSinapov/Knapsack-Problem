@@ -8,7 +8,7 @@
 
         IList<Item> Items { get; set; }
 
-        double Weight { get; set; }
+        double TotalWeight { get; set; }
 
         double Value { get; set; }
     }

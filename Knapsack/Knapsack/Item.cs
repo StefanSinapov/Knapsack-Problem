@@ -2,23 +2,22 @@
 {
     public class Item
     {
-        public Item(int name, double value, double weight)
+        public Item()
+        {
+        }
+
+        public Item(string name, int value, int weight)
         {
             this.Name = name;
             this.Value = value;
             this.Weight = weight;
         }
 
-        public int Name { get; set; }
+        public string Name { get; set; }
 
-        public double Value { get; set; }
+        public int Value { get; set; }
 
-        public double Weight { get; set; }
-
-        public double GetRatio()
-        {
-            return this.Value / this.Weight;
-        }
+        public int Weight { get; set; }
 
         public override string ToString()
         {

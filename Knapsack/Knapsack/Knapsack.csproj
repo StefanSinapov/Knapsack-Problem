@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="DynamicProgrammingSolver.cs" />
     <Compile Include="Contracts\IKnapsackSolution.cs" />
+    <Compile Include="EntryPoint.cs" />
     <Compile Include="Item.cs" />
     <Compile Include="KnapsackSolution.cs" />
     <Compile Include="KnapsackSolver.cs" />
