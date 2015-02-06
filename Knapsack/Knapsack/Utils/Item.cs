@@ -1,4 +1,4 @@
-﻿namespace Knapsack
+﻿namespace Knapsack.Utils
 {
     public class Item
     {
@@ -19,9 +19,17 @@
 
         public int Weight { get; set; }
 
+        public int Ratio
+        {
+            get
+            {
+                return this.Value / this.Weight;
+            }
+        }
+
         public override string ToString()
         {
-            return string.Format("{0} - weight: {1}, value: {2}", this.Name, this.Weight, this.Value);
+            return string.Format("\n    {0} - weight: {1}, value: {2}", this.Name, this.Weight, this.Value);
         }
     }
 }

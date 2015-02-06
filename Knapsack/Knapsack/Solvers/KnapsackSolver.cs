@@ -3,6 +3,8 @@
     using System.Collections.Generic;
     using System.Linq;
 
+    using Knapsack.Utils;
+
     public abstract class KnapsackSolver
     {
         protected KnapsackSolver(IList<Item> items, int capacity)

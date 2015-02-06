@@ -4,6 +4,7 @@
     using System.Text;
 
     using Knapsack.Contracts;
+    using Knapsack.Utils;
 
     public class KnapsackSolution : IKnapsackSolution
     {
@@ -18,8 +19,8 @@
         public override string ToString()
         {
             var output = new StringBuilder();
-            output.AppendFormat("{0}| value: {1}, total weight: {2}", this.Approach, this.Value, this.TotalWeight);
-            output.AppendLine(string.Join(", ", this.Items));
+            output.AppendLine(string.Format("{0} | value: {1}, total weight: {2}", this.Approach, this.Value, this.TotalWeight));
+            output.AppendLine(" Products:" + string.Join(", ", this.Items));
 
             return output.ToString();
         }

@@ -2,6 +2,8 @@
 {
     using System.Collections.Generic;
 
+    using Knapsack.Utils;
+
     public interface IKnapsackSolution
     {
         string Approach { get; set; }

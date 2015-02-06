@@ -32,6 +32,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="PowerCollections">
+      <HintPath>..\packages\XAct.Wintellect.PowerCollections.0.0.1\lib\net20\PowerCollections.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -41,16 +44,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DynamicProgrammingSolver.cs" />
+    <Compile Include="Solvers\BranchAndBoundSolver.cs" />
+    <Compile Include="Solvers\DynamicProgrammingSolver.cs" />
     <Compile Include="Contracts\IKnapsackSolution.cs" />
     <Compile Include="EntryPoint.cs" />
-    <Compile Include="Item.cs" />
-    <Compile Include="KnapsackSolution.cs" />
-    <Compile Include="KnapsackSolver.cs" />
+    <Compile Include="Utils\Item.cs" />
+    <Compile Include="Utils\KnapsackSolution.cs" />
+    <Compile Include="Solvers\KnapsackSolver.cs" />
+    <Compile Include="Utils\Node.cs" />
+    <Compile Include="Utils\PriorityQueue.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

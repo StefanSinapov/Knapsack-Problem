@@ -1,7 +1,9 @@
-﻿namespace Knapsack
+﻿namespace Knapsack.Solvers
 {
     using System;
     using System.Collections.Generic;
+
+    using Knapsack.Utils;
 
     public class DynamicProgrammingSolver : KnapsackSolver
     {
@@ -24,12 +26,12 @@
         private KnapsackSolution TakeItems()
         {
             var best = new KnapsackSolution() { Items = new List<Item>() };
-            for (int row = Items.Count, col = this.Capacity; row > 0; row--)
+            for (int row = this.Items.Count, col = this.Capacity; row > 0; row--)
             {
-                if (this.table[row, col] != table[row - 1, col])
+                if (this.table[row, col] != this.table[row - 1, col])
                 {
                     best.Items.Add(this.Items[row - 1]);
-                    col -= Items[row - 1].Weight;
+                    col -= this.Items[row - 1].Weight;
                 }
             }
 
@@ -41,7 +43,7 @@
         private void FillTable()
         {
             this.table = new double[this.Items.Count + 1, this.Capacity + 1];
-            for (int row = 1; row < this.Items.Count; row++)
+            for (int row = 1; row <= this.Items.Count; row++)
             {
                 var item = this.Items[row - 1];
                 for (int col = 0; col <= this.Capacity; col++)
