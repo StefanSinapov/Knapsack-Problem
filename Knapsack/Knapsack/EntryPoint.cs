@@ -18,8 +18,8 @@
                 new Item() { Name = "second", Weight = 5, Value = 8 },
                 new Item() { Name = "cheese", Weight = 7, Value = 11 },
                 new Item() { Name = "first", Weight = 3, Value = 14 },
-                new Item() { Name = "cheese", Weight = 1, Value = 7 },
-                new Item() { Name = "cheese", Weight = 6, Value = 9 }
+                new Item() { Name = "potatos", Weight = 1, Value = 7 },
+                new Item() { Name = "bear", Weight = 6, Value = 9 }
             };
 
             IList<KnapsackSolution> solutions = new List<KnapsackSolution>()

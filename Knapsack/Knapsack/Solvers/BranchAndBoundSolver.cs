@@ -14,7 +14,7 @@
 
         public override KnapsackSolution Solve()
         {
-            this.Items = this.Items.OrderBy(i => i.Ratio).ToList();
+            this.Items = this.Items.OrderByDescending(i => i.Ratio).ToList();
 
             Node best = new Node();
             Node root = new Node();

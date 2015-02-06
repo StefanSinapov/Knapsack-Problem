@@ -1,9 +1,7 @@
-﻿namespace Knapsack
+﻿namespace Knapsack.Utils
 {
     using System;
     using System.Collections.Generic;
-
-    using Knapsack.Utils;
 
     public class Node : IComparable<Node>
     {
