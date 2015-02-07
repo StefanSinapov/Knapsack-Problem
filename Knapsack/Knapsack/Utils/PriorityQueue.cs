@@ -1,4 +1,4 @@
-﻿namespace Knapsack
+﻿namespace Knapsack.Utils
 {
     using System;
 
