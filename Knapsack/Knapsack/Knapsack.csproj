@@ -49,6 +49,7 @@
     <Compile Include="Contracts\IKnapsackSolution.cs" />
     <Compile Include="EntryPoint.cs" />
     <Compile Include="Utils\Item.cs" />
+    <Compile Include="Utils\KnapsackInput.cs" />
     <Compile Include="Utils\KnapsackSolution.cs" />
     <Compile Include="Solvers\KnapsackSolver.cs" />
     <Compile Include="Utils\Node.cs" />
@@ -58,6 +59,9 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SampleInputs\easy20.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
